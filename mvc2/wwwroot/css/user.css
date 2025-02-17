@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    /* Full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    /* Changes layout to vertical */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    /* Adjusts space distribution */
+    flex-wrap: wrap;
+    /* Allows cards to wrap in smaller screens */
+}
+
+.card {
+    width: calc(33% - 20px);
+    /* Adjusts width, accounting for margin */
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Adds spacing before the button */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    /* Matches container background */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
